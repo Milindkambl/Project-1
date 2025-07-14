@@ -2,15 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Hello') {
             steps {
-                echo 'Checking out code...'
-            }
-        }
-
-        stage('Run Python Script') {
-            steps {
-                sh 'login test case.py'
+                echo 'Hello World'
             }
         }
     }
